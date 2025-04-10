@@ -1,0 +1,293 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #4a4b4a;
+  line-height: 28px;
+}
+
+.bg-primary-blue {
+  background-color: #4B0F2F;
+}
+
+.h5-coman {
+  font-size: 24px;
+}
+
+.img-fluid {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title {
+  font-size: 22px;
+}
+
+.bg-secodary {
+  background-color: #F5F1F8;
+}
+
+.h2-coman {
+  font-size: 46px;
+}
+
+.banner-btn {
+  background-color: #f2e0ff;
+  color: #4B0F2F;
+  border: solid 2px #4B0F2F;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 28px;
+  padding: 15px 30px;
+  display: flex;
+  font-family: "Libre Baskerville", serif;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.banner-btn::after {
+  font-family: "FontAwesome";
+  content: "\f061";
+  color: #4B0F2F;
+  font-size: 28px;
+  transform: rotate(330deg);
+  border: 2px solid #4B0F2F;
+  padding: 8px 10px;
+  display: inline-block;
+  border-radius: 30px;
+}
+@media (max-width: 1400px) {
+  .banner-btn::after {
+    font-size: 22px;
+    margin-left: 2px;
+  }
+}
+@media (max-width: 1400px) {
+  .banner-btn {
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 22px;
+  }
+}
+.banner-btn:hover::after {
+  transform: rotate(0deg);
+}
+
+.coman-btn {
+  background-color: #f2e0ff;
+  color: #4B0F2F;
+  border: solid 2px #4B0F2F;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 50px;
+  display: inline-block;
+  font-family: "Libre Baskerville", serif;
+  align-items: center;
+}
+@media (max-width: 1400px) {
+  .coman-btn {
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 22px;
+  }
+}
+.coman-btn:hover {
+  background-color: #4B0F2F;
+  color: #F5F1F8;
+}
+
+.sub-title {
+  font-size: 18px;
+}
+
+.navbar-brand {
+  color: #4B0F2F;
+  font-size: 35px;
+  font-family: "Libre Baskerville", serif;
+}
+.navbar-brand span {
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  padding-block: 20px;
+}
+nav .nav-link {
+  padding-block: 3px;
+  color: #4B0F2F !important;
+  font-size: 24px;
+}
+
+.banner .h2-coman {
+  color: #4B0F2F;
+  font-family: "Libre Baskerville", serif;
+}
+.banner .banner-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.to-health .h3-coman, .commaunity .h3-coman {
+  font-size: 35px;
+  color: #4B0F2F;
+  font-family: "Libre Baskerville", serif;
+}
+.to-health .h4-coman, .commaunity .h4-coman {
+  font-size: 28px;
+  color: #4B0F2F;
+  padding-top: 10px;
+}
+
+.underline {
+  color: #4B0F2F !important;
+  font-size: 22px;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+.underline:hover {
+  text-decoration: none;
+}
+.underline:hover::after {
+  font-family: "FontAwesome";
+  content: "\f101";
+  color: #4B0F2F;
+  font-size: 18px;
+  margin-left: 3px;
+}
+
+.comunity-img {
+  position: relative;
+}
+.comunity-img::after {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  font-family: "FontAwesome";
+  content: "\f061";
+  color: #4B0F2F;
+  font-size: 28px;
+  transform: rotate(330deg);
+  background-color: #f2e0ff;
+  padding: 10px 12px;
+  border-radius: 30px;
+  border: 1px solid #4B0F2F;
+}
+.comunity-img:hover::after {
+  transform: rotate(0deg);
+}
+.comunity-img img {
+  border: 3px solid #4B0F2F;
+}
+
+.commaunity .h4-coman {
+  font-size: 28px;
+  color: #4B0F2F;
+  padding-top: 10px;
+}
+.commaunity .badge, .commaunity .bg-seconday {
+  font-size: 16px;
+  background-color: #F5F1F8;
+  color: #4B0F2F;
+  border-radius: 30px;
+}
+.commaunity .bg-seconday {
+  color: #F5F1F8;
+  background-color: #4B0F2F;
+}
+
+.tabs .container-fluid {
+  background-color: #F5F1F8;
+  border-radius: 20px;
+  padding-inline: 50px;
+  padding-block: 70px;
+}
+.tabs .nav-pills .nav-item {
+  padding-left: 10px;
+}
+.tabs .nav-pills .nav-item .nav-link {
+  background-color: transparent;
+  border: 2px solid #4B0F2F;
+  border-radius: 30px;
+  color: #4B0F2F;
+  padding: 7px 30px;
+  font-weight: 500;
+}
+.tabs .nav-pills .nav-item .active {
+  background-color: #4B0F2F;
+  color: #F5F1F8;
+}
+.tabs .h2-coman {
+  color: #4B0F2F;
+  font-family: "Libre Baskerville", serif;
+  font-size: 46px;
+}
+
+.teachars .h2-coman {
+  color: #4B0F2F;
+  font-family: "Libre Baskerville", serif;
+  font-size: 46px;
+}
+.teachars img {
+  border: 5px solid #4B0F2F;
+}
+
+.review .h3-coman {
+  color: #4B0F2F;
+  font-family: "Libre Baskerville", serif;
+  font-size: 35px;
+}
+.review .owl-nav button {
+  background: white !important;
+  border-radius: 50% !important;
+  margin-right: 30px !important;
+  width: 50px;
+  height: 50px;
+  border: #4B0F2F 2px solid;
+  color: #4B0F2F;
+  background-color: #F5F1F8;
+}
+.review .owl-nav button span {
+  font-size: 35px;
+}
+.review .card .card-body {
+  background-color: #f3f3f3;
+  border-radius: 10px 10px 0px 0px;
+}
+.review .card .card-body p {
+  color: #4a4b4a;
+  font-size: 20px;
+}
+.review .card .card-body .sub-title {
+  font-size: 18px;
+}
+.review .card .card-footer {
+  background-color: #F5F1F8;
+  border: 5px solid #4B0F2F;
+  border-radius: 10px;
+}
+.review .card .card-footer .title {
+  font-size: 22px;
+  color: #4B0F2F;
+  font-family: "Libre Baskerville", serif;
+  margin: 0%;
+}
+.review .card .card-footer img {
+  border-radius: 10px;
+}
+
+footer .container-fluid {
+  background-color: #4B0F2F;
+}
+footer .container-fluid .inner {
+  border-radius: 20px;
+  background-color: #F5F1F8;
+}
+footer .container-fluid .title {
+  font-size: 22px;
+  color: #4B0F2F;
+  font-family: "Libre Baskerville", serif;
+}
+footer .container-fluid .sub-title {
+  font-size: 18px;
+  color: #4a4b4a;
+}/*# sourceMappingURL=style.css.map */

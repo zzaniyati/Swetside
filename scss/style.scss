@@ -1,0 +1,342 @@
+$primary-color:#4B0F2F	;
+$secondary-color:#F5F1F8 ;
+$black:#4a4b4a;
+$white:#fff;
+$h1:56px;
+$h2:46px;
+$h3:35px;
+$h4:28px;
+$h5:24px;
+$title:22px;
+$sub-title:18px;
+$p:16px;
+$sub-p:14px;
+$s-20:20px;
+$libre:"Libre Baskerville", serif;
+$lato:"Lato", sans-serif;
+
+body{
+    font-family: $lato;
+    font-size: $p;
+    color: $black;
+    line-height: 28px;
+    // background-color: $secondary-color;
+}
+
+.bg-primary-blue{
+    background-color: $primary-color;
+}
+
+.h5-coman{
+    font-size: $h5;
+}
+
+.img-fluid{
+    object-fit: cover;
+}
+
+.title{
+    font-size: $title;
+}
+
+.bg-secodary{
+    background-color: $secondary-color;
+}
+
+.h2-coman{
+    font-size: $h2;
+}
+
+.banner-btn{
+    background-color: #f2e0ff;
+    color: $primary-color;
+    border: solid 2px $primary-color;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: $h4;
+    padding: 15px 30px;
+    display: flex;
+    font-family: $libre;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    &::after{
+        font-family: "FontAwesome";
+        content: "\f061";
+        color: $primary-color;
+        font-size: $h4;
+        transform: rotate(330deg);
+        border: 2px solid $primary-color;
+        padding: 8px 10px;
+        display: inline-block;
+        border-radius: 30px;
+        @media(max-width:1400px){
+            font-size: $title;
+            margin-left: 2px;
+        }
+    }
+    @media(max-width:1400px){
+        display:inline-block;
+        padding: 10px 50px;
+        font-size: $title;
+
+    }
+    &:hover{
+        &::after{
+            transform: rotate(0deg);
+        }
+
+    }
+}
+.coman-btn{
+    background-color: #f2e0ff;
+    color: $primary-color;
+    border: solid 2px $primary-color;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: $s-20;
+    padding: 10px 50px;
+    display: inline-block;
+    font-family: $libre;
+    align-items: center;
+    @media(max-width:1400px){
+        display:inline-block;
+        padding: 10px 50px;
+        font-size: $title;
+
+    }
+    &:hover{
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
+}
+
+.sub-title{
+    font-size: $sub-title;
+}
+
+.navbar-brand{
+    color: $primary-color;
+    font-size: $h3;
+    font-family: $libre;
+
+    span{
+        font-family: $lato;
+    }
+
+  }  
+
+nav{
+    padding-block: 20px;
+ 
+  .nav-link{
+    padding-block: 3px;
+    color: $primary-color !important;
+    font-size: $h5;
+  }
+}
+
+.banner{
+    .h2-coman{
+        color: $primary-color;
+        font-family: $libre;
+    }
+    .banner-img{
+        img{
+            object-fit: cover;
+        }
+    }
+}
+
+.to-health , .commaunity{
+    .h3-coman{
+        font-size: $h3;
+        color: $primary-color;
+        font-family: $libre;
+    }
+    .h4-coman{
+        font-size: $h4;
+        color: $primary-color;
+        padding-top: 10px;
+    }
+}
+.underline{
+    color: $primary-color !important;
+    font-size: $title;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    &:hover{
+        text-decoration: none;
+        &::after{
+            font-family: "FontAwesome";
+            content: "\f101";
+            color: $primary-color;
+            font-size: $sub-title;
+            margin-left: 3px;
+        }
+    }
+}
+
+.comunity-img{
+    position: relative;
+        &::after{
+            position: absolute;
+            bottom: 10%;
+            right:5%;
+            font-family: "FontAwesome";
+            content: "\f061";
+            color: $primary-color;
+            font-size: $h4;
+            transform: rotate(330deg);
+            background-color: #f2e0ff;
+            padding: 10px 12px;
+            border-radius: 30px;
+            border: 1px solid $primary-color
+        }
+        &:hover{
+            &::after{
+                transform: rotate(0deg);
+            }
+        }
+        img{
+            border: 3px solid $primary-color;
+        }
+}
+
+.commaunity{
+    .h4-coman{
+        font-size: $h4;
+        color: $primary-color;
+        padding-top: 10px;
+    }
+
+    .badge{
+        font-size: $p;
+        // padding: 10px 30px;
+        background-color: $secondary-color;
+        color: $primary-color;
+        border-radius: 30px;
+    }
+    .bg-seconday{
+        @extend .badge;
+        color: $secondary-color;
+        background-color: $primary-color;
+    }
+}
+
+.tabs{
+    .container-fluid{
+        background-color: $secondary-color;
+        border-radius: 20px;
+        padding-inline: 50px;
+        padding-block: 70px;
+    }
+    .nav-pills{
+        .nav-item{
+            padding-left: 10px;
+            .nav-link{
+                background-color: transparent;
+                border: 2px solid $primary-color;
+                border-radius: 30px;
+                color: $primary-color;
+                padding: 7px 30px;
+                font-weight: 500;
+            }
+            .active{
+                background-color: $primary-color;
+                color: $secondary-color;
+            }
+        }
+    }
+    .h2-coman{
+        color: $primary-color;
+        font-family: $libre;
+        font-size: $h2;
+    }
+}
+
+.teachars{
+    .h2-coman{
+        color: $primary-color;
+        font-family: $libre;
+        font-size: $h2;
+    }
+    img{
+        border: 5px solid $primary-color;
+    }
+}
+
+.review{
+    .h3-coman{
+        color: $primary-color;
+        font-family: $libre;
+        font-size: $h3;
+    }
+    
+    .owl-nav {
+        button{
+            background: white !important;
+            border-radius: 50% !important;
+            margin-right: 30px !important;
+            width: 50px;
+            height: 50px;
+            border: $primary-color 2px solid;
+            color: $primary-color;
+            background-color: $secondary-color;
+        
+            span{
+                font-size: $h3;
+            }
+        }
+    }
+    .card{
+        
+        .card-body{
+            background-color: #f3f3f3;
+            border-radius: 10px 10px 0px 0px;
+            p{
+                color: $black;
+                font-size: $s-20;
+            }
+            .sub-title{
+                font-size: $sub-title;
+            }
+        }
+        .card-footer{
+            background-color: $secondary-color;
+            border: 5px solid $primary-color;
+            border-radius: 10px;
+
+            .title{
+                font-size: $title;
+                color: $primary-color;
+                font-family: $libre;
+                margin: 0%;
+            }
+            img{
+                // border: 5px solid $primary-color;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+footer{
+    // background-color: $primary-color;
+    .container-fluid{
+        background-color: $primary-color;
+        .inner{           
+            border-radius: 20px;
+            background-color: $secondary-color;
+        }
+        .title{
+            font-size: $title;
+            color: $primary-color;
+            font-family: $libre;
+        }
+        .sub-title{
+            font-size: $sub-title;
+            color: $black;
+        }
+    }
+}
